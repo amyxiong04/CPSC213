@@ -15,7 +15,7 @@ int q2 (int arg0, int arg1, int arg2) {
         }
         break;
     case 15:  arg2=0; break;
-    case 16:  
+    //break;
         if (arg1 < arg2) {
             arg2 = 1;
         } else {
