@@ -1,0 +1,39 @@
+Time values for aRead:
+
+10 reads:
+    real - 0m0.021s
+    user - 0m0.016s
+    sys - 0m0.004s
+    
+100 reads:
+    real - 0m0.011s
+    user - 0m0.015s
+    sys - 0m0.005s
+    
+1000 reads:
+    real - 0m0.021s
+    user - 0m0.015s
+    sys - 0m0.005s
+    
+    
+    
+Time values for sRead:
+
+10 reads:
+    real - 0m0.118s
+    user - 0m0.117s
+    sys - 0m0.002s
+    
+100 reads:
+    real - 0m1.102s
+    user - 0m1.102s
+    sys - 0m0.001s
+    
+1000 reads:
+    real - 0m10.976s
+    user - 0m10.970s
+    sys - 0m0.005s
+    
+    
+Based on the recorded values above, we observe that 'aRead' consistently demonstrates shorter execution times compared to 'sRead' for the same number of reads. This is because asynchronous operations allows the program to process other tasks while it is waiting for the I/O operations to complete, thus allowing for more efficient utilization of resources/time. As well, we see that 'aRead' maintains relatively low and consistent execution times as the number of reads increases from 10 to 100 to 1000, whereas in 'sRead' the program execution time shows a significantly more drastic time difference with an increase in number of reads. In this case, the advantage of asynchronous operations becomes obvious, as compared to synchronous operations, the overall execution time is notably reduced thanks to the overlapping between other computations and I/O operations.
+    
